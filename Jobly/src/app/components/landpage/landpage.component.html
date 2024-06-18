@@ -1,0 +1,33 @@
+<div class="fundo">
+  <div class="container landpage-container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <img src="../../../assets/img/logo.png" alt="Logo" class="logo">
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-end search-column">
+        <app-search-bar></app-search-bar>
+      </div>
+      <div class="col-md-1"></div> <!-- Espaçamento entre as colunas -->
+      <div class="col-md-5 d-flex align-items-center justify-content-start login-column">
+        <div class="login-form">
+          <div class="text-center">
+            <h2>Bem-vindo à Jobly</h2>
+            <p>Como deseja continuar?</p>
+          </div>
+          <form (ngSubmit)="onLogin()">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Senha</label>
+              <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          </form>
+          <button routerLink="/cadastro" class="btn btn-block">Cadastrar-se</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

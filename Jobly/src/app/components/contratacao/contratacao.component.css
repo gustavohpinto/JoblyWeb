@@ -1,0 +1,80 @@
+.contratacao{
+  min-height: 72vh;
+}
+
+.contratacao-container {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.info-section .row {
+  margin-top: 20px;
+}
+
+.info-section .fa-2x {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.info-section p {
+  margin: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-section .card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section .card-body {
+  padding: 20px;
+}
+
+.form-section .card-title {
+  margin-bottom: 20px;
+}
+
+.form-group{
+  margin: 10px 0px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100% - 1rem);
+}
+
+@media (max-width: 768px) {
+  .info-section .row {
+    flex-direction: column;
+  }
+
+  .info-section .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .row.align-items-center {
+    flex-direction: column-reverse;
+  }
+
+  .col-md-7, .col-md-5 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="search-bar-container text-center">
+  <h2>Encontre o serviço que você precisa</h2>
+  <form class="form" (ngSubmit)="onSubmit()">
+    <input type="text" class="form-control" placeholder="Digite o serviço que você está procurando"
+      [(ngModel)]="searchTerm" name="searchTerm" required />
+    <button type="submit" class="btn btn-primary mt-2">Pesquisar</button>
+  </form>
+  <div *ngIf="filteredServices.length > 0" class="mt-3">
+    <h4>Resultados da Pesquisa</h4>
+    <div class="row servicos">
+      <div class="col-md-4" *ngFor="let service of filteredServices">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ service.nome }}</h5>
+            <p class="card-text">{{ service.descricao }}</p>
+            <p class="card-text">Avaliação: {{ service.avaliacao }}</p>
+            <a [routerLink]="['/contratacao', service.id]" class="btn btn-primary" (click)="handleSearch()">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="filteredServices.length == 0">
+    <div class="col"*ngFor="let servico of uniqueServices">
+      <button class="btn btn-outline-secondary" (click)="onQuickSearch(servico.nome)">
+        {{ servico.nome }}
+      </button>
+    </div>
+  </div>
+</div>
+  

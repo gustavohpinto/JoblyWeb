@@ -1,0 +1,32 @@
+.perfil{
+    min-height: 75vh;
+}
+
+.profile-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-details, .profile-info {
+    text-align: left;
+  }
+  
+  .profile-details h2, .profile-info h3 {
+    margin-top: 0;
+  }
+  
+  .profile-info ul {
+    padding-left: 0;
+  }
+  
+  .profile-info li {
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,326 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "João",
+      "email": "joao@example.com",
+      "senha": "123456"
+    },
+    {
+      "id": "2",
+      "nome": "Maria",
+      "email": "maria@example.com",
+      "senha": "abcdef"
+    },
+    {
+      "id": "3",
+      "nome": "Pedro",
+      "email": "pedro@example.com",
+      "senha": "123abc"
+    },
+    {
+      "id": "4",
+      "nome": "Gustavo",
+      "email": "g@gmail.com",
+      "senha": "g123"
+    },
+    {
+      "id": "662983",
+      "nome": "mariana",
+      "email": "m@gmail.com",
+      "senha": "m123",
+      "endereco": "juz",
+      "numero": "315",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "103226",
+      "nome": "mariana",
+      "email": "m@gmail.com",
+      "senha": "m123",
+      "endereco": "juz",
+      "numero": "315",
+      "cidade": "sp",
+      "estado": "sp"
+    },
+    {
+      "id": "313394",
+      "nome": "Gustavo Pinto",
+      "email": "gu@gmail.com",
+      "senha": "gu123",
+      "endereco": "flor",
+      "numero": "250",
+      "cidade": "Ribeirão Preto",
+      "estado": "SP"
+    },
+    {
+      "id": "446432",
+      "nome": "cesar",
+      "email": "c@gmail.com",
+      "senha": "c123",
+      "endereco": "s",
+      "numero": "1",
+      "cidade": "sp",
+      "estado": "sp"
+    },
+    {
+      "id": "562011",
+      "nome": "guga",
+      "email": "gu@gmail.com",
+      "senha": "g123",
+      "endereco": {
+        "rua": "jo",
+        "cep": "09099099",
+        "numero": "1",
+        "bairro": "g",
+        "cidade": "j",
+        "uf": "vv",
+        "complemento": ""
+      }
+    },
+    {
+      "id": "757520",
+      "nome": "guga",
+      "email": "guga1@gmail.com",
+      "senha": "g123",
+      "endereco": {
+        "rua": "jo",
+        "cep": "090990999",
+        "numero": "1",
+        "bairro": "g",
+        "cidade": "ssss",
+        "uf": "pp",
+        "complemento": ""
+      }
+    }
+  ],
+  "colaboradores": [
+    {
+      "id": "1",
+      "nome": "Carlos",
+      "servico": "Eletricista",
+      "avaliacao": 4.5
+    },
+    {
+      "id": "2",
+      "nome": "Ana",
+      "servico": "Encanador",
+      "avaliacao": 4.7
+    },
+    {
+      "id": "3",
+      "nome": "Bruno",
+      "servico": "Pintor",
+      "avaliacao": 4.3
+    }
+  ],
+  "servicos": [
+    {
+      "id": "1",
+      "nome": "Eletricidade",
+      "descricao": "Serviços elétricos",
+      "avaliacao": 4.5,
+      "colaboradorId": 1
+    },
+    {
+      "id": "2",
+      "nome": "Encanamento",
+      "descricao": "Serviços de encanamento",
+      "avaliacao": 4.7,
+      "colaboradorId": 2
+    },
+    {
+      "id": "3",
+      "nome": "Pintura",
+      "descricao": "Serviços de pintura",
+      "avaliacao": 4.3,
+      "colaboradorId": 3
+    },
+    {
+      "id": "4",
+      "nome": "Pintura",
+      "descricao": "Serviços de pintura",
+      "avaliacao": 3,
+      "colaboradorId": 3
+    },
+    {
+      "id": "5",
+      "nome": "Pintura",
+      "descricao": "Serviços de pintura",
+      "avaliacao": 5,
+      "colaboradorId": 3
+    }
+  ],
+  "contratacoes": [
+    {
+      "id": "1",
+      "usuarioId": 4,
+      "servicoId": 1,
+      "colaboradorId": 1,
+      "data": "2023-06-13T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "usuarioId": 4,
+      "servicoId": 2,
+      "colaboradorId": 2,
+      "data": "2023-06-14T11:00:00Z"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:14:04.551Z",
+      "endereco": "flor",
+      "enderecoNumero": "250",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:14:05.881Z",
+      "endereco": "flor",
+      "enderecoNumero": "250",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:14:06.042Z",
+      "endereco": "flor",
+      "enderecoNumero": "250",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:14:06.202Z",
+      "endereco": "flor",
+      "enderecoNumero": "250",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:14:06.380Z",
+      "endereco": "flor",
+      "enderecoNumero": "250",
+      "cidade": "São Paulo",
+      "estado": "São Paulo"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:15:06.916Z",
+      "endereco": "s",
+      "enderecoNumero": "1",
+      "cidade": "s",
+      "estado": "s"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:28:41.199Z",
+      "endereco": "",
+      "enderecoNumero": "",
+      "cidade": "",
+      "estado": ""
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:31:03.912Z",
+      "endereco": "",
+      "enderecoNumero": "",
+      "cidade": "",
+      "estado": ""
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T01:33:09.842Z",
+      "endereco": "",
+      "enderecoNumero": "",
+      "cidade": "",
+      "estado": ""
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "5",
+      "colaboradorId": "3",
+      "data": "2024-06-14T01:33:24.480Z",
+      "endereco": "",
+      "enderecoNumero": "",
+      "cidade": "",
+      "estado": ""
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-14T02:30:51.474Z",
+      "endereco": "g",
+      "enderecoNumero": "",
+      "cidade": "1",
+      "estado": "1"
+    },
+    {
+      "id": "0",
+      "usuarioId": "4",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-15T01:58:49.167Z",
+      "endereco": {
+        "rua": "jo",
+        "cep": "09099090",
+        "numero": "1",
+        "bairro": "g",
+        "cidade": "c",
+        "uf": "vv",
+        "complemento": ""
+      },
+      "status": "Em andamento"
+    },
+    {
+      "id": 0,
+      "usuarioId": "757520",
+      "servicoId": "2",
+      "colaboradorId": "2",
+      "data": "2024-06-15T02:26:22.920Z",
+      "endereco": {
+        "rua": "jo",
+        "cep": "6767675",
+        "numero": "1",
+        "bairro": "g",
+        "cidade": "ff",
+        "uf": "ff",
+        "complemento": ""
+      },
+      "status": "Em andamento"
+    }
+  ]
+}

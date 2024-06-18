@@ -1,0 +1,59 @@
+
+  <app-header></app-header>
+
+  <div class="perfil">
+
+  <div class="container profile-container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h1>Perfil</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-4 text-center">
+        <img src="">
+      </div>
+      <div class="col-md-4">
+        <div class="profile-info mt-4">
+          <h3>Detalhes</h3>
+          <div *ngIf="usuario">
+            <ul class="list-unstyled">
+            <li><strong>Nome:</strong> {{ usuario.nome }}</li>
+            <li><strong>Email:</strong> {{ usuario.email }}</li>
+            <li><strong>Endereço</strong></li>
+            <li><strong>Rua:</strong> {{ usuario.endereco.rua }}</li>
+            <li><strong>Numero:</strong> {{ usuario.endereco.numero }}</li>
+            <li><strong>Cidade:</strong> {{ usuario.endereco.cidade }}</li>
+            <li><strong>Estado:</strong> {{ usuario.endereco.uf }}</li>
+            <li><strong>CEP:</strong> {{ usuario.endereco.cep }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="conteudo d-flex justify-content-between">
+      <h3>Minhas Contratações</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let contratacao of contratacoes">
+        <div class="card card-mb-6" style="width: 100%; margin: 10px">
+          <div class="card-body">
+            <h5 class="card-title">{{ contratacao.servicoId }}</h5>
+            <p class="card-text">{{ contratacao.colaboradorId }}</p>
+            <p class="card-text">Data: {{ contratacao.data }}</p>
+            <p class="card-text">Status: {{ contratacao.status }}</p>
+            <p class="card-text">Preço: {{ contratacao.preco }}</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+  <app-footer></app-footer>
+  
+  
+
+  

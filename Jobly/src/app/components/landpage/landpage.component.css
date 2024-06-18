@@ -1,0 +1,82 @@
+.fundo{
+    background-image: url("../../../assets/img/fundo.png");
+}
+
+.logo{
+  width: 30%;
+}
+
+.landpage-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row{
+    width:100%;
+  }
+  
+  .search-column {
+    padding-right: 40px; /* Aumentar padding à coluna de pesquisa */
+  }
+  
+  .login-column {
+    padding-left: 40px; /* Adicionar padding à coluna de login */
+  }
+  
+  .login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .login-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-block {
+    width: 100%;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+  }
+
+  button{
+    margin-top: 1rem;
+  }
+  
+  @media (max-width:1300px) {
+    .col-md-5, .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .row{
+        width:90%;
+      }
+  
+    .login-form {
+      margin-top: 20px;
+    }
+  
+    .col-md-1 {
+      display: none; /* Esconder a coluna de espaçamento em telas menores */
+    }
+  }
+  

@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="container-pesquisa">
+  <app-search-bar class="conteudo"></app-search-bar>
+</div>
+<div class="container">
+  <div class="row" style="margin-bottom: 10vh;">
+    <h3>Destaques</h3>
+    <div class="card-mb-3 col-3">
+      <div class="card-body">
+        <img src="../../../assets/img/servico-casa.png" alt="">
+      </div>
+    </div>
+    <div class="card-mb-3 col-3">
+      <div class="card-body">
+        <img src="../../../assets/img/pneu-furado.png" alt="">
+      </div>
+    </div>
+    <div class="card-mb-3 col-3">
+      <div class="card-body">
+        <img src="../../../assets/img/saude-descaonto.png" alt="">
+      </div>
+    </div>
+    <div class="card-mb-3 col-3">
+      <div class="card-body">
+        <img src="../../../assets/img/celular-quebrado.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="conteudo d-flex justify-content-between align-items-center">
+    <h3>Serviços mais bem avaliados</h3>
+    <a [routerLink]="['/servicos']" class="btn btn-primary">Ver Todos os Serviços</a>
+  </div>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let servico of servicos">
+      <div class="card card-mb-6" style="width: 100%; margin: 10px">
+        <div class="card-body">
+          <h5 class="card-title">{{ servico.nome }}</h5>
+          <p class="card-text">{{ servico.descricao }}</p>
+          <p class="card-text">Avaliação: {{ servico.avaliacao }}</p>
+          <a [routerLink]="['/contratacao', servico.id]" class="btn btn-primary">Contratar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+

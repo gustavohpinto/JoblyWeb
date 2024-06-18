@@ -1,0 +1,30 @@
+<div class="navs">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">
+      <img src="../../../assets/img/logo.png" alt="Logo" class="logo">
+    </a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/servicos">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/perfil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </svg>
+          </a>           
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="nav-menu">
+    <div class="nav-item" *ngFor="let item of navItems">
+        <img [src]="item.icon" alt="{{ item.label }}" class="nav-icon">
+        <span>{{ item.label }}</span>
+    </div>
+</div>
+</div>
+  
